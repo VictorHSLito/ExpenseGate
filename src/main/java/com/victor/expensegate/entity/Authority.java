@@ -15,6 +15,11 @@ public class Authority {
     public Authority() {
     }
 
+    public Authority(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public Long getId() {
         return id;
     }
@@ -29,5 +34,13 @@ public class Authority {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public static class Values {
+        public static final String EXP_CREATE = "expense:create";
+        public static final String EXP_READ = "expense:read";
+        public static final String EXP_READ_ANY = "expense:read:any";
+        public static final String EXP_APPROVE = "expense:approve";
+        public static final String EXP_APPROVE_ANY = "expense:approve:any";
     }
 }

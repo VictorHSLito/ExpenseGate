@@ -24,6 +24,12 @@ public class Role {
     public Role() {
     }
 
+    public Role(Long id, String name, Set<Authority> authorities) {
+        this.id = id;
+        this.name = name;
+        this.authorities = authorities;
+    }
+
     public Long getId() {
         return id;
     }
